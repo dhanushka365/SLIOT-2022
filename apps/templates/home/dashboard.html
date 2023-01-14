@@ -1,0 +1,185 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card ">
+                    <div class="card-header">
+                        <h4 class="card-title"> Device Control</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table tablesorter " id="">
+                                <thead class=" text-primary">
+                                <tr>
+                                    <th>
+                                        Device Name
+                                    </th>
+                                    <th>
+                                        Relay
+                                    </th>
+                                    <th>
+                                        Status
+                                    </th>
+                                    <th class="text-center">
+                                        Control
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        Dakota Rice
+                                    </td>
+                                    <td>
+                                        Niger
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-success rounded-pill d-inline">Active</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- Rounded switch -->
+                                        <label class="switch1">
+                                        <input type="checkbox">
+                                        <span class="slider1 round"></span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Minerva Hooper
+                                    </td>
+                                    <td>
+                                        Curaçao
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-primary rounded-pill d-inline">Onboarding</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- Rounded switch -->
+                                        <label class="switch1">
+                                        <input type="checkbox">
+                                        <span class="slider1 round"></span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Sage Rodriguez
+                                    </td>
+                                    <td>
+                                        Netherlands
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- Rounded switch -->
+                                        <label class="switch1">
+                                        <input type="checkbox">
+                                        <span class="slider1 round"></span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Philip Chaney
+                                    </td>
+                                    <td>
+                                        Korea, South
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-danger rounded-pill d-inline">Danger</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- Rounded switch -->
+                                        <label class="switch1">
+                                        <input type="checkbox">
+                                        <span class="slider1 round"></span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Doris Greene
+                                    </td>
+                                    <td>
+                                        Malawi
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-success rounded-pill d-inline">Sucess</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- Rounded switch -->
+                                        <label class="switch1">
+                                        <input type="checkbox">
+                                        <span class="slider1 round"></span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Mason Porter
+                                    </td>
+                                    <td>
+                                        Chile
+                                    </td>
+                                    <td>
+                                        <span class="badge badge-primary rounded-pill d-inline">Sucess</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- Rounded switch -->
+                                        <label class="switch1">
+                                        <input type="checkbox">
+                                        <span class="slider1 round"></span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Jon Porter
+                                    </td>
+                                    <td>
+                                        Portugal
+                                    </td>
+                                    <td>
+                                        Gloucester
+                                    </td>
+                                    <td class="text-center">
+                                        <!-- Rounded switch -->
+                                        <label class="switch1">
+                                        <input type="checkbox">
+                                        <span class="slider1 round"></span>
+                                        </label>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+<script>
+    $(document).ready(function () {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+
+    });
+</script>
+<script type="text/javascript" src="js/custom.js"></script>
+{% endblock javascripts %}
